@@ -2,9 +2,42 @@ html {
     font-family: Rubik, Verdana, Arial, sans-serif;
 }
 
+body {
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #525b56;
+    background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, 100),
+    rgba(0,40,0, 100)
+    );
+}
+
 .container {
+    display: block;
+    justify-content: center;
     width: 100%;
-    margin: auto;
+    margin: 0;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10vh;
+}
+
+.blocki {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cari {
+    display: block;
+    width: 100%;
 }
 
 button {
@@ -14,21 +47,26 @@ button {
     border-radius: 1rem;
     background-color: #525b56;
     color: #e4ebf2;
-    height: 5rem;
-    width: 18rem;
-    font-size: 3rem;
+    height: 100%;
+    width: 30%;
+    font-size: xx-large;
+    margin-left: 6vw;
+    margin-right: 6vw;
 
 }
 p {
     font-size: 3vw;
-    text-align: center;
     color: #e4ebf2;
-    margin: auto;
+    margin-left: 24.5vw;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
     padding: 0;
     padding-top: 5px;
 }
 
 body {
+    text-align: center;
+    display: flex;
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -46,24 +84,14 @@ h1 {
     font-size: 3vw;
     display: block;
     color: #e4ebf2;
+    width: 100%;
 }
-main {
-    text-align: center;
-}
+
 img {
     border-radius: 0.5rem;
-    width: 40%;
-    height: 40%;
-    margin: auto;
-}
-@media screen and (min-width: 769px) {
-    .container {
-        width: 80%;
-    }
-    article {
-        display: block;
-        width: calc(100% / 3);
-        flex-wrap: wrap;
-    }
+    width: 30%;
+    height: 100%;
+    margin-right: 6vw;
+    margin-left: 6vw;
 }
 
