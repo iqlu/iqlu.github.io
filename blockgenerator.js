@@ -4,8 +4,16 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 const blockimage = document.getElementById('image')
-const button = document.querySelector('button');
+const carimage = document.getElementById('carskin')
+const button = document.getElementById('but1');
 button.addEventListener('click', function() {rollnumber()});
+const button2 = document.getElementById('skin');
+button2.addEventListener('click', function() {rollskin()});
+
+function rollskin(){
+  const skin_num = getRandomInt(1, 9);
+  carimage.setAttribute("src", "img/"+skin_num+".PNG");
+}
 
 function rollnumber(){
   const folder = getRandomInt(2, 9);
