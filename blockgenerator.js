@@ -12,7 +12,7 @@ button2.addEventListener('click', function() {rollskin()});
 
 function rollskin(){
   const skin_num = getRandomInt(1, 90);
-  carimage.setAttribute("src", "img/"+skin_num+".PNG");
+  carimage.setAttribute("src", "img/"+skin_num+".png");
 }
 
 function rollnumber(){
