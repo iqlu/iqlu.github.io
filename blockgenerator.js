@@ -11,7 +11,7 @@ const button2 = document.getElementById('skin');
 button2.addEventListener('click', function() {rollskin()});
 
 function rollskin(){
-  const skin_num = getRandomInt(1, 9);
+  const skin_num = getRandomInt(1, 90);
   carimage.setAttribute("src", "img/"+skin_num+".PNG");
 }
 
